@@ -4,6 +4,7 @@ import { findUserById } from '../repositories/userRepository';
 import { AuthRequest } from '../types/request';
 import config from '../config';
 import { MESSAGES } from '../constants';
+import { IUser } from '../models/User';
 
 export const authenticate = async (req: AuthRequest, res: Response, next: NextFunction) => {
     const token = req.header('Authorization')?.replace('Bearer ', '');
@@ -21,7 +22,7 @@ export const authenticate = async (req: AuthRequest, res: Response, next: NextFu
             return res.status(401).send({ error: 'Authentication required' });
         }
 
-        req.user = user;
+        req.user = user as IUser;
         next();
     } catch (error) {
         res.status(401).send({ error: MESSAGES.UNAUTHORIZED });
