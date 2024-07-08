@@ -7,6 +7,11 @@ const app = express();
 
 app.use(express.json());
 
+// Define a route for the home URL
+app.get('/', (req, res) => {
+    res.send('Welcome to health app api!');
+  });
+
 app.use('/api/auth', authRouter);
 app.use('/api', taskRouter);
 

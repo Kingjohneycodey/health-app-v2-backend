@@ -1,6 +1,8 @@
 
 
 
-TODO
+TODO 📝
+
+* Deploy to vercel ✅
 
 * Add Joi validate for validating fields
