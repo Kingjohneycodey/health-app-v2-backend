@@ -2,3 +2,6 @@
 {"level":"info","message":"Server is running on port 4000"}
 {"level":"info","message":"Connected to MongoDB"}
 {"level":"info","message":"Server is running on port 4000"}
+{"level":"info","message":"Connected to MongoDB"}
+{"level":"info","message":"Server is running on port 4000"}
+{"_message":"User validation failed","errors":{"email":{"kind":"required","message":"Path `email` is required.","name":"ValidatorError","path":"email","properties":{"message":"Path `email` is required.","path":"email","type":"required"}}},"level":"error","message":"Unexpected error: User validation failed: email: Path `email` is required.","stack":"ValidationError: User validation failed: email: Path `email` is required.\n    at model.Document.invalidate (C:\\Users\\JOHNEY\\Documents\\project3\\health-app\\backend\\node_modules\\mongoose\\lib\\document.js:3306:32)\n    at C:\\Users\\JOHNEY\\Documents\\project3\\health-app\\backend\\node_modules\\mongoose\\lib\\document.js:3067:17\n    at C:\\Users\\JOHNEY\\Documents\\project3\\health-app\\backend\\node_modules\\mongoose\\lib\\schemaType.js:1388:9\n    at processTicksAndRejections (node:internal/process/task_queues:78:11)"}
