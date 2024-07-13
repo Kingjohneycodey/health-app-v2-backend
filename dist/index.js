@@ -24,12 +24,15 @@ const startServer = () => __awaiter(void 0, void 0, void 0, function* () {
         };
         yield mongoose_1.default.connect(config_1.default.mongodbUri, options);
         logger_1.default.info('Connected to MongoDB');
+        console.log('Connected to MongoDB');
         app_1.default.listen(config_1.default.port, () => {
             logger_1.default.info(`Server is running on port ${config_1.default.port}`);
+            console.log(`Server is running on port ${config_1.default.port}`);
         });
     }
     catch (error) {
         logger_1.default.error('Failed to start server:', error);
+        console.log('Failed to start server:', error);
     }
 });
 startServer();
