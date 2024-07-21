@@ -6,10 +6,12 @@ export interface IPatient extends Document {
     // completed: boolean;
     // userId: string;
     fullName: string;
+    doctorId: string;
 }
 
 const patientSchema: Schema = new Schema({
     fullName: { type: String, required: true },
+    doctorId: { type: mongoose.Schema.Types.ObjectId, ref: 'Doctor', required: true }
 });
 
 export const Patient = mongoose.model<IPatient>('Patient', patientSchema);
