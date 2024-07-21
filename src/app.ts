@@ -16,7 +16,7 @@ app.get('/', (req, res) => {
 
 app.use('/api/auth', authRouter);
 app.use('/api', taskRouter);
-app.use("/api", patientRouter)
+app.use("/api/patient", patientRouter)
 app.use("/api/doctor", doctorRouter)
 
 app.use(errorHandler);
