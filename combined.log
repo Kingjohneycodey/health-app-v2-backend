@@ -41,3 +41,45 @@
 {"level":"info","message":"Server is running on port 3000"}
 {"level":"info","message":"Connected to MongoDB"}
 {"level":"info","message":"Server is running on port 3000"}
+{"level":"info","message":"Connected to MongoDB"}
+{"level":"info","message":"Server is running on port 3000"}
+{"level":"info","message":"Connected to MongoDB"}
+{"level":"info","message":"Server is running on port 3000"}
+{"level":"info","message":"Connected to MongoDB"}
+{"level":"info","message":"Server is running on port 3000"}
+{"code":"ECONNRESET","errno":-4077,"level":"error","message":"Unexpected error: read ECONNRESET","stack":"Error: read ECONNRESET\n    at TLSWrap.onStreamRead (node:internal/stream_base_commons:218:20)","syscall":"read"}
+{"level":"info","message":"Connected to MongoDB"}
+{"level":"info","message":"Server is running on port 3000"}
+{"code":"ECONNRESET","errno":-4077,"level":"error","message":"Unexpected error: read ECONNRESET","stack":"Error: read ECONNRESET\n    at TLSWrap.onStreamRead (node:internal/stream_base_commons:218:20)","syscall":"read"}
+{"level":"info","message":"Connected to MongoDB"}
+{"level":"info","message":"Server is running on port 3000"}
+{"level":"info","message":"Connected to MongoDB"}
+{"level":"info","message":"Server is running on port 3000"}
+{"level":"info","message":"Connected to MongoDB"}
+{"level":"info","message":"Server is running on port 3000"}
+{"level":"info","message":"Connected to MongoDB"}
+{"level":"info","message":"Server is running on port 3000"}
+{"level":"info","message":"Connected to MongoDB"}
+{"level":"info","message":"Server is running on port 3000"}
+{"level":"info","message":"Connected to MongoDB"}
+{"level":"info","message":"Server is running on port 3000"}
+{"level":"info","message":"Connected to MongoDB"}
+{"level":"info","message":"Server is running on port 3000"}
+{"code":"ECONNRESET","errno":-4077,"level":"error","message":"Unexpected error: read ECONNRESET","stack":"Error: read ECONNRESET\n    at TLSWrap.onStreamRead (node:internal/stream_base_commons:218:20)","syscall":"read"}
+{"code":"ECONNRESET","errno":-4077,"level":"error","message":"Unexpected error: read ECONNRESET","stack":"Error: read ECONNRESET\n    at TLSWrap.onStreamRead (node:internal/stream_base_commons:218:20)","syscall":"read"}
+{"level":"info","message":"Connected to MongoDB"}
+{"level":"info","message":"Server is running on port 3000"}
+{"level":"info","message":"Connected to MongoDB"}
+{"level":"info","message":"Server is running on port 3000"}
+{"level":"info","message":"Connected to MongoDB"}
+{"level":"info","message":"Server is running on port 3000"}
+{"level":"info","message":"Connected to MongoDB"}
+{"level":"info","message":"Server is running on port 3000"}
+{"level":"info","message":"Connected to MongoDB"}
+{"level":"info","message":"Server is running on port 3000"}
+{"code":"ECONNRESET","errno":-4077,"level":"error","message":"Unexpected error: read ECONNRESET","stack":"Error: read ECONNRESET\n    at TLSWrap.onStreamRead (node:internal/stream_base_commons:218:20)","syscall":"read"}
+{"level":"info","message":"Connected to MongoDB"}
+{"level":"info","message":"Server is running on port 3000"}
+{"code":"ECONNRESET","errno":-4077,"level":"error","message":"Unexpected error: read ECONNRESET","stack":"Error: read ECONNRESET\n    at TLSWrap.onStreamRead (node:internal/stream_base_commons:218:20)","syscall":"read"}
+{"level":"info","message":"Connected to MongoDB"}
+{"level":"info","message":"Server is running on port 3000"}
