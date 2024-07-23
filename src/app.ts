@@ -5,6 +5,9 @@ import { patientRouter } from './routes/patientRoutes'
 import  { doctorRouter } from "./routes/doctorRoutes"
 import { appErrorHandler, errorHandler } from './middleware/errorHandler';
 
+import sendEmail from './utils/sendMail';
+import { send } from 'process';
+
 const app = express();
 
 app.use(express.json());
@@ -14,7 +17,15 @@ app.get('/', (req, res) => {
     res.send('Welcome to health app api!');
   });
 
-app.use('/api/auth', authRouter);
+app.get("/sendMailTest",  async(req, res) => {
+  const sendEmailSuc = await sendEmail("numterminal@gmail.com", "Test", "<i>Testing Route</i>")
+  if (sendEmailSuc) {
+    res.send("Succesful")
+  }
+  
+})
+
+app.use('/api/auth', authRouter)
 app.use('/api', taskRouter);
 app.use("/api/patient", patientRouter)
 app.use("/api/doctor", doctorRouter)

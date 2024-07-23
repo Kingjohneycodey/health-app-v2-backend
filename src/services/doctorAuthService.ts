@@ -7,6 +7,7 @@ import { MESSAGES } from '../constants';
 import { CustomError } from '../middleware/errorHandler';
 import { AuthRequest } from '../types/request';
 import { Response } from 'express';
+import sendEmail from '../utils/sendMail';
 
 export const registerDoctor = async (username: string, email: string, password: string) => {
     const existingDoctor = await findDoctorByEmail(email);
@@ -40,6 +41,11 @@ export const loginDoctor = async (email: string, password: string) => {
     const token = jwt.sign({ _id: doctor._id }, config.jwtSecret);
     return { doctor, token };
 };
+
+export const sendPasswordResetEmail =async (email: string, resetURL: string) => {
+    sendEmail(email, resetURL, resetURL)
+    // Implement your email sending logic here (using nodemailer or any other email service)
+  }
 
 
 export const checkDoctor = (req: AuthRequest, res: Response) => {
