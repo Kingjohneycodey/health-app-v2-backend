@@ -13,11 +13,14 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@types/crypto-js": "^4.2.2",
+    "@types/nodemailer": "^6.4.15",
     "bcryptjs": "^2.4.3",
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.4.5",
+    "nodemailer": "^6.9.14",
     "winston": "^3.13.0"
   },
   "devDependencies": {
