@@ -1,13 +1,14 @@
-import { Router } from 'express';
-import { create, getAll } from '../controllers/patientController';
-import { AuthRequest } from '../types/request';
+import { Router, Request, Response } from 'express';
+import { register, login, getProfile } from '../controllers/patientAuthController';
 import { authenticate } from '../middleware/auth';
-
+import { AuthRequest } from '../types/request';
 
 const router = Router();
 
-router.post('/create', authenticate ,create);
-router.get('/patients', authenticate ,getAll);
+router.post('/register', register);
 
+router.post('/login', login);
+
+router.get('/me', authenticate, getProfile);
 
 export { router as patientRouter };
